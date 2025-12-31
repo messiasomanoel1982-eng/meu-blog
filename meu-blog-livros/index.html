@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Páginas ao Vento | Meu Blog Literário</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fcfaf7;
+        }
+        h1, h2, h3, .serif {
+            font-family: 'Playfair Display', serif;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+        .custom-shadow {
+            box-shadow: 0 10px 30px -10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="text-stone-800">
+
+    <!-- Navegação -->
+    <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-stone-200">
+        <div class="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="#" class="text-2xl font-bold italic text-stone-900">Páginas ao Vento</a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#" class="hover:text-amber-700 transition">Início</a>
+                <a href="#" class="hover:text-amber-700 transition">Resenhas</a>
+                <a href="#" class="hover:text-amber-700 transition">Minha Estante</a>
+                <a href="#" class="hover:text-amber-700 transition">Sobre</a>
+            </div>
+            <button class="md:hidden text-stone-600">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Header Hero -->
+    <header class="max-w-5xl mx-auto px-4 py-16 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4 text-stone-900 leading-tight">Explorando mundos, <br>uma página de cada vez.</h1>
+        <p class="text-stone-600 text-lg max-w-2xl mx-auto italic">Bem-vindo ao meu canto literário. Aqui compartilho minhas impressões sobre as últimas leituras, clássicos esquecidos e dicas para quem ama o cheiro de papel novo.</p>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-3 gap-12">
+        
+        <!-- Feed de Posts -->
+        <div class="lg:col-span-2 space-y-12">
+            
+            <!-- Post 1 -->
+            <article class="group">
+                <div class="overflow-hidden rounded-2xl mb-6 custom-shadow">
+                    <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&q=80&w=1200" alt="[Capa de Livro em cima de uma mesa]" class="w-full h-80 object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="space-y-3">
+                    <div class="flex items-center space-x-2 text-amber-700 text-xs font-bold uppercase tracking-widest">
+                        <span>Resenha</span>
+                        <span>•</span>
+                        <span>Ficção Científica</span>
+                    </div>
+                    <h2 class="text-3xl font-bold text-stone-900 hover:text-amber-700 transition cursor-pointer">Por que você deveria ler "Duna" antes da próxima adaptação</h2>
+                    <p class="text-stone-600 leading-relaxed">A obra-prima de Frank Herbert continua tão relevante hoje quanto em 1965. Mergulhamos na complexa ecologia e política de Arrakis nesta análise detalhada...</p>
+                    <div class="flex items-center space-x-4 pt-4">
+                        <span class="text-stone-400 text-sm">15 de Outubro, 2023</span>
+                        <a href="#" class="text-stone-900 font-semibold text-sm border-b-2 border-amber-200 hover:border-amber-500 transition">Ler mais</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Post 2 -->
+            <article class="group">
+                <div class="overflow-hidden rounded-2xl mb-6 custom-shadow">
+                    <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&q=80&w=1200" alt="[Pilha de livros clássicos]" class="w-full h-80 object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="space-y-3">
+                    <div class="flex items-center space-x-2 text-amber-700 text-xs font-bold uppercase tracking-widest">
+                        <span>Dicas</span>
+                        <span>•</span>
+                        <span>Hábito de Leitura</span>
+                    </div>
+                    <h2 class="text-3xl font-bold text-stone-900 hover:text-amber-700 transition cursor-pointer">5 Dicas para retomar o hábito de leitura este ano</h2>
+                    <p class="text-stone-600 leading-relaxed">Se você sente que a sua concentração foi roubada pelas redes sociais, aqui estão estratégias práticas para voltar a devorar livros com prazer...</p>
+                    <div class="flex items-center space-x-4 pt-4">
+                        <span class="text-stone-400 text-sm">08 de Outubro, 2023</span>
+                        <a href="#" class="text-stone-900 font-semibold text-sm border-b-2 border-amber-200 hover:border-amber-500 transition">Ler mais</a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="space-y-12">
+            
+            <!-- Perfil -->
+            <div class="bg-white p-8 rounded-2xl border border-stone-100 custom-shadow text-center">
+                <div class="w-24 h-24 bg-amber-100 rounded-full mx-auto mb-4 flex items-center justify-center overflow-hidden border-2 border-white outline outline-2 outline-amber-200">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150" alt="[Sua foto de perfil]" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-xl font-bold text-stone-900 mb-2">Sobre Mim</h3>
+                <p class="text-stone-600 text-sm leading-relaxed mb-4">Bibliófilo incurável, colecionador de edições especiais e apaixonado por histórias que desafiam o tempo.</p>
+                <div class="flex justify-center space-x-4">
+                    <a href="#" class="text-stone-400 hover:text-amber-700 transition">Instagram</a>
+                    <a href="#" class="text-stone-400 hover:text-amber-700 transition">Goodreads</a>
+                </div>
+            </div>
+
+            <!-- Lendo agora -->
+            <div class="bg-stone-900 p-8 rounded-2xl text-white custom-shadow">
+                <h3 class="text-amber-400 text-xs uppercase tracking-widest font-bold mb-6 italic">Lendo Agora</h3>
+                <div class="flex items-start space-x-4">
+                    <div class="w-20 flex-shrink-0 shadow-lg rotate-3">
+                        <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80&w=150" alt="[Capa de livro de mistério]" class="rounded">
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg leading-tight">O Nome da Rosa</h4>
+                        <p class="text-stone-400 text-sm italic mb-4">Umberto Eco</p>
+                        <div class="w-full bg-stone-700 h-1.5 rounded-full overflow-hidden">
+                            <div class="bg-amber-400 h-full w-[65%]"></div>
+                        </div>
+                        <span class="text-[10px] text-stone-500 mt-2 block">65% concluído</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categorias -->
+            <div>
+                <h3 class="text-stone-900 font-bold mb-4 flex items-center">
+                    <span class="mr-2">📁</span> Categorias
+                </h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="flex justify-between text-stone-600 hover:text-amber-700 text-sm py-1 border-b border-stone-100"><span>Romance Clássico</span> <span class="text-stone-400">(12)</span></a></li>
+                    <li><a href="#" class="flex justify-between text-stone-600 hover:text-amber-700 text-sm py-1 border-b border-stone-100"><span>Thriller & Suspense</span> <span class="text-stone-400">(8)</span></a></li>
+                    <li><a href="#" class="flex justify-between text-stone-600 hover:text-amber-700 text-sm py-1 border-b border-stone-100"><span>Não-Ficção</span> <span class="text-stone-400">(5)</span></a></li>
+                    <li><a href="#" class="flex justify-between text-stone-600 hover:text-amber-700 text-sm py-1 border-b border-stone-100"><span>Fantasia</span> <span class="text-stone-400">(15)</span></a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="bg-amber-50 p-8 rounded-2xl border border-amber-100">
+                <h3 class="text-xl font-bold text-stone-900 mb-2">Cartas Literárias</h3>
+                <p class="text-stone-600 text-sm mb-4">Receba as minhas melhores recomendações do mês diretamente no seu e-mail.</p>
+                <form class="space-y-3">
+                    <input type="email" placeholder="seu@email.com" class="w-full px-4 py-2 rounded-lg border border-amber-200 focus:outline-none focus:ring-2 focus:ring-amber-400 text-sm">
+                    <button class="w-full bg-stone-900 text-white py-2 rounded-lg font-semibold hover:bg-stone-800 transition text-sm">Inscrever-se</button>
+                </form>
+            </div>
+
+        </aside>
+    </main>
+
+    <footer class="mt-24 border-t border-stone-200 py-12 text-center text-stone-500 text-sm">
+        <p>&copy; 2023 Páginas ao Vento. Feito com ❤️ por um leitor apaixonado.</p>
+    </footer>
+
+</body>
+</html>
